@@ -332,6 +332,7 @@ body.light-theme{
 }
 
 .home_top{
+  min-height: 65vh;
   display:flex;
   justify-content: center;
 }
@@ -909,15 +910,15 @@ body.light-theme{
   .nav-menu{
     padding:1rem 1.5rem;
   }
-}
 
 .home_buttons{
   flex-direction: column;
 }
 
 .home_handle{
-  width: 150px;
-  height: 253px;
+  /* width: 150px;
+  height: 253px; */
+  display: none;
 }
 
 .home_img{
@@ -947,6 +948,13 @@ body.light-theme{
 
 .work_filters{
   column-gap: .25rem;
+}
+}
+
+@media screen and (max-width: 793px){
+  .home_handle{
+    display:none;
+  }
 }
 
 /* For medium devices */
